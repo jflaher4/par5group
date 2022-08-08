@@ -1,7 +1,8 @@
 :root {
-  --grey: #bbbdbf;
+  --light-grey: #bbbdbf;
   --light-blue: #7f99bc;
   --dark-blue: #203864;
+  --dark-grey: grey;
 }
 
 body {
@@ -20,10 +21,11 @@ body {
 #events {
   font-family: 'Gotham HTF Book', sans-serif;
   position: fixed;
-  color: #bbbdbf;
+  color: var(--light-grey);
   text-size-adjust: auto;
   right: 6%;
-  bottom: 20%;
+  bottom: 18%;
+  font-size: 1vw;
 }
 
 ul {
@@ -40,12 +42,23 @@ ul {
   width: 82%;
 }
 
-.navbar {
-  font-family: 'Gotham HTF Book', sans-serif;
+#navbar {
+  font-family: 'Gotham', sans-serif;
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 5%;
   color: var(--light-blue);
+  font-size: 1.25vw;
+}
+
+#mission {
+  font-family: 'Gotham', sans-serif;
+  position: absolute;
+  color: var(--light-grey);
+  right: 2%;
+  top: 40%;
+  width: 14%;
+  font-size: 1vw;
 }
 
 .background-img {
@@ -54,10 +67,58 @@ ul {
 
 #partners {
   min-height: 100vh;
+  font-family: 'Gotham', sans-serif;
+  color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 1.75vw;
+  margin: 3%;
+}
+
+#staff {
+  font-family: 'Gotham', sans-serif;
+  color: var(--dark-grey);
+}
+
+.small-logo {
+  width: 5%;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 3% 3% 3%;
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.partner-img {
+  width: 8%;
+  border: solid var(--dark-grey) 2px;
+  border-radius: 50%;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 #staff {
   min-height: 100vh;
+}
+
+.join-us-message {
+  position: relative;
+  bottom: 35rem;
+  left: 75%;
+  color: white;
+  width: 150px;
 }
 
 a:link {
@@ -78,4 +139,8 @@ a:hover {
 a:active {
   color: var(--dark-blue);
   text-decoration: none;
+}
+
+.footer {
+  background-color: var(--light-blue);
 }
