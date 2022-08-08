@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 20%;
+  min-height: 100%;
+  background-color: navy;
+}
+
+.content {
+  width: 80%;
+}
+
+.background-img {
+  width: 100%;
+}
+
+#partners {
+  min-height: 100vh;
+}
+
+#staff {
+  min-height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
