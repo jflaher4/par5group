@@ -113,12 +113,36 @@ ul {
   min-height: 100vh;
 }
 
-.join-us-message {
+#join-us {
   position: relative;
-  bottom: 35rem;
-  left: 75%;
+}
+
+.join-us-message {
+  position: absolute;
+  bottom: 55%;
+  left: 65%;
   color: white;
-  width: 150px;
+  display: flex;
+  gap: 10%;
+  font-family: 'Gotham', sans-serif;
+}
+
+.join-us {
+  font-size: 1.75vw;
+  min-width: fit-content;
+}
+
+.message {
+  font-size: 1.25vw;
+  max-width: fit-content;
+}
+
+.join-us-email:link {
+  color: var(--light-blue);
+}
+
+.join-us-email:hover {
+  color: var(--light-grey);
 }
 
 a:link {
