@@ -145,6 +145,15 @@ ul {
   color: var(--light-grey);
 }
 
+.link {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+.link:hover {
+  color: var(--light-blue);
+}
+
 a:link {
   color: var(--dark-blue);
   text-decoration: none;
