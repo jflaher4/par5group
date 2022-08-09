@@ -68,12 +68,14 @@ ul {
 
 #mission {
   font-family: 'Gotham HTF Book', sans-serif;
-  position: absolute;
+  position: fixed;
   color: var(--light-grey);
   right: 2%;
   top: 40%;
   width: 14%;
   font-size: 1vw;
+  opacity: 0;
+  transition: all 2s;
 }
 
 .background-img {
@@ -105,6 +107,12 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1 !important;
+  transition: all 2s;
 }
 
 .partner-img {
@@ -133,6 +141,10 @@ table {
   margin: 0% 3%;
 }
 
+tr {
+  opacity: 0;
+}
+
 td {
   font-size: 1.25vw;
 }
@@ -154,8 +166,8 @@ td {
 
 .join-us-message {
   position: absolute;
-  bottom: 75%;
-  left: 40%;
+  bottom: 77%;
+  left: 44%;
   color: white;
   display: flex;
   gap: 10%;
@@ -168,7 +180,7 @@ td {
 }
 
 .message {
-  font-size: 1.25vw;
+  font-size: 1vw;
   max-width: fit-content;
 }
 
