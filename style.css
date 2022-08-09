@@ -2,7 +2,7 @@
   font-family: 'Gotham HTF Book';
   font-style: normal;
   font-weight: 500;
-  src: local('Gotham HTF Book'), url('https://fonts.cdnfonts.com/s/13132/GothamHTF-Book.woff') format('woff');
+  src: local('Gotham HTF Book'), url('./assets/GothamHTF-Book.woff') format('woff');
 }
 
 :root {
