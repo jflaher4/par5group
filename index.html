@@ -28,7 +28,11 @@
       <img class="background-img" src="assets/DJohnson-Gallery-Portland.jpg">
       <div id="partners">
         <div class="header">
-          <span class="bold">PAR</span>TNERS
+          <span class="navbar">
+            <span class="bold link" onclick="scrollToPartners()">PARTNERS</span
+              >//<span class="link" onclick="scrollToStaff()">STAFF ROSTER</span
+              >//<span class="link" onclick="scrollToJoinUs()">JOIN US</span>
+          </span>
         </div>
         <div class="partners-list">
           <div class="partner-card">
@@ -91,7 +95,11 @@
       </div>
       <div id="staff">
         <div class="header">
-          <span><img class="small-logo" src="assets/P5G_logo_INITIAL_COLOR.png">STAFF</span>
+          <span class="navbar">
+            <span class="link" onclick="scrollToPartners()">PARTNERS</span
+              >//<span class="bold link" onclick="scrollToStaff()">STAFF ROSTER</span
+              >//<span class="link" onclick="scrollToJoinUs()">JOIN US</span>
+          </span>
         </div>
         <table>
           <tr>
@@ -211,7 +219,12 @@
         </table>
       </div>
       <div id="join-us">
-        <img  class="background-img" src="assets/mickelson-tee.jpg">
+        <img  class="background-img" src="assets/Ortiz-wave.jpg">
+        <span class="join-us-navbar navbar">
+          <span class="join-us-link" onclick="scrollToPartners()">PARTNERS</span
+            >//<span class="join-us-link" onclick="scrollToStaff()">STAFF ROSTER</span
+            >//<span class="bold join-us-link" onclick="scrollToJoinUs()">JOIN US</span>
+        </span>
         <div class="join-us-message">
           <div class="bold join-us">
             JOIN US
@@ -222,11 +235,8 @@
           </div>
         </div>
       </div>  
-      <div class="footer">
-        <img src="assets/P5G_logo_FULL_BLACK.png" width="20%">
-      </div>
     </div>
-    <img id="main-logo" src="assets/P5G_logo_FULL.png">
+    <img id="main-logo" src="assets/P5G_logo_FULL.png" onclick="scrollToHome()">
     <ul id="events" >
       <li>BEDMINSTER</li>
       <li>BOSTON</li>

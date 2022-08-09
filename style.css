@@ -16,6 +16,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 #main-logo {
@@ -23,6 +24,7 @@ body {
   width: 25%;
   top: 3%;
   right: 3%;
+  cursor: pointer;
 }
 
 #events {
@@ -54,6 +56,12 @@ ul {
   position: absolute;
   top: 6%;
   left: 5%;
+  color: var(--light-blue);
+  font-size: 1.25vw;
+}
+
+.navbar {
+  font-family: 'Gotham HTF Book', sans-serif;
   color: var(--light-blue);
   font-size: 1.25vw;
 }
@@ -137,10 +145,17 @@ td {
   position: relative;
 }
 
+.join-us-navbar {
+  position: absolute;
+  left: 0;
+  color: var(--light-grey);
+  padding: 3%;
+}
+
 .join-us-message {
   position: absolute;
-  bottom: 55%;
-  left: 65%;
+  bottom: 75%;
+  left: 40%;
   color: white;
   display: flex;
   gap: 10%;
@@ -162,6 +177,15 @@ td {
 }
 
 .join-us-email:hover {
+  color: var(--light-grey);
+}
+
+.join-us-link {
+  cursor: pointer;
+  color: var(--light-blue);
+}
+
+.join-us-link:hover {
   color: var(--light-grey);
 }
 
