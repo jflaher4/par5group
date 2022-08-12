@@ -20,13 +20,34 @@ ul {
   list-style-type: none;
 }
 
+
+a:link {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
 @media (max-width: 999px) {
   body {
     margin: 0;
   }
 
-  .background-img {
-    height: 100vh;
+  .background-img, .mobile-img {
+    height: 40vh;
     width: 100vw;
     object-fit: cover;
   }
@@ -38,6 +59,11 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .dummy {
+    position: relative !important;
+    opacity: 0 !important;
   }
 
   #main-logo {
@@ -58,8 +84,81 @@ ul {
   #mission {
     color: var(--dark-blue);
     font-family: 'Gotham HTF Book', sans-serif;
-    padding: 20%;
-    font-size: 4vh;
+    padding: 20% 20% 10% 20%;
+    font-size: 7vw;
+  }
+
+  .mobile-header {
+    font-size: 7vw;
+    padding: 3%;
+  }
+
+  #partners {
+    margin: 5% 3% 10% 3%;
+    font-family: 'Gotham HTF Book', sans-serif;
+    color: var(--dark-grey);
+  }
+
+  .partners-list {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+  }
+
+  .partner-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5% 0;
+  }
+
+  .partner-img {
+    width: 25%;
+    border: solid var(--dark-grey) 1px;
+    border-radius: 25%;
+  }
+
+  .partner-bio {
+    font-size: 3vw;
+    padding: 0 3%;
+  }
+
+  .email {
+    display: none;
+  }
+
+  table {
+    margin: 3% 3%;
+  }
+
+  tr>td {
+    padding-bottom: 2%;
+  }
+
+  .small-logo {
+    height: 6vw;
+  }
+
+  #staff {
+    margin: 10% 0;
+    color: var(--dark-grey);
+    font-family: 'Gotham HTF Book', sans-serif;
+  }
+
+  .join-us-message {
+    color: var(--dark-blue);
+    font-family: 'Gotham HTF Book', sans-serif;
+    padding: 20% 20% 20% 20%;
+    font-size: 5vw;
+  }
+
+  .join-us {
+      font-size: 7vw;
+  }
+
+  .join-us-email:link {
+    color: var(--light-blue);
   }
 }
 
@@ -131,6 +230,14 @@ ul {
     height: 100vh;
     width: 100%;
     object-fit: cover;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .mobile-header {
+    display: none;
   }
 
   #partners {
@@ -257,27 +364,11 @@ ul {
     color: var(--light-blue);
   }
 
-  a:link {
-    color: var(--dark-blue);
-    text-decoration: none;
-  }
-
-  a:visited {
-    color: var(--dark-blue);
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: var(--light-blue);
-    text-decoration: none;
-  }
-
-  a:active {
-    color: var(--dark-blue);
-    text-decoration: none;
-  }
-
   .footer {
     background-color: var(--light-blue);
+  }
+
+  .dummy {
+    display: none !important;
   }
 }
