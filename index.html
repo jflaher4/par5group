@@ -10,10 +10,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
+    <div class="sidebar">
+      <img id="main-logo" src="assets/P5G_logo_FULL.png" onclick="scrollToHome()">
+      <ul id="events" >
+        <li>BEDMINSTER</li>
+        <li>BOSTON</li>
+        <li>CHICAGO</li>
+        <li>MIAMI</li>
+        <li>PORTLAND</li>
+      </ul>
+    </div>
     <div class="content">
       <div id="home" class="home">
         <span id="navbar">
@@ -21,11 +31,11 @@
             >//<span class="link" onclick="scrollToStaff()">STAFF ROSTER</span
             >//<span class="link" onclick="scrollToJoinUs()">JOIN US</span>
         </span>
-        <div id="mission" class="visible">
-          Par 5 Group is an emerging force in the event delivery industry driven to deliver best in class global events.
-        </div>
       </div>
       <img class="background-img" src="assets/DJohnson-Gallery-Portland.jpg">
+      <div id="mission" class="visible">
+        <span class="bold">PAR 5 Group</span> <br/>is an emerging force in the event delivery industry driven to deliver best in class global events.
+      </div>
       <div id="partners">
         <div class="header">
           <span class="navbar">
@@ -236,16 +246,7 @@
         </div>
       </div>  
     </div>
-    <img id="main-logo" src="assets/P5G_logo_FULL.png" onclick="scrollToHome()">
-    <ul id="events" >
-      <li>BEDMINSTER</li>
-      <li>BOSTON</li>
-      <li>CHICAGO</li>
-      <li>MIAMI</li>
-      <li>PORTLAND</li>
-    </ul>
-    <div class="sidebar">
-    </div>
+    
 	  <script src="index.js"></script>
   </body>
 </html>
