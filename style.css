@@ -44,6 +44,7 @@ a:active {
 @media (max-width: 999px) {
   body {
     margin: 0;
+    overflow-x: hidden;
   }
 
   .background-img, .mobile-img {
@@ -193,6 +194,7 @@ a:active {
     width: 18%;
     min-height: 100%;
     background-color: #203864;
+    border-left: 1.5px solid white;
   }
 
   .content {
@@ -270,7 +272,7 @@ a:active {
 
   .visible {
     opacity: 1 !important;
-    transition: all 2s;
+    transition: all 1s;
   }
 
   .partner-img {
