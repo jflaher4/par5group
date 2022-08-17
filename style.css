@@ -41,7 +41,7 @@ a:active {
   text-decoration: none;
 }
 
-@media (max-width: 999px) {
+@media (orientation: portrait) {
   body {
     margin: 0;
     overflow-x: hidden;
@@ -163,7 +163,7 @@ a:active {
   }
 }
 
-@media (min-width: 1000px) {
+@media (orientation: landscape) {
   body {
     margin: 0;
     display: flex;
@@ -276,7 +276,7 @@ a:active {
   }
 
   .partner-img {
-    width: 8%;
+    width: 6vw;
     border: solid var(--dark-grey) 2px;
     border-radius: 50%;
   }
