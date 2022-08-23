@@ -1,10 +1,8 @@
 function scrollToHome() {
   document.getElementById('home').scrollIntoView({behavior: 'smooth'});
-  document.getElementById('mission').classList.add('visible');
 }
 
 async function scrollToPartners() {
-  document.getElementById('mission').classList.remove('visible');
   var partnerCards = document.getElementsByClassName('partner-card');
   for (var i = 0; i < partnerCards.length; i++) {
     partnerCards[i].classList.remove('visible');
@@ -18,8 +16,7 @@ async function scrollToPartners() {
 }
 
 async function scrollToStaff() {
-  document.getElementById('mission').classList.remove('visible');
-  var staffRows = document.querySelectorAll('tr');
+  var staffRows = document.getElementsByClassName('tr');
   for (var i = 0; i < staffRows.length; i++) {
     staffRows[i].classList.remove('visible');
   }
@@ -31,7 +28,6 @@ async function scrollToStaff() {
 }
 
 function scrollToJoinUs() {
-  document.getElementById('mission').classList.remove('visible');
   document.getElementById('join-us').scrollIntoView({behavior: 'smooth'});
 }
 
