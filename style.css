@@ -165,7 +165,7 @@ a:active {
     flex-basis: 40%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 1vw;
   }
 
   .xlarge {
