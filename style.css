@@ -333,7 +333,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0% 3%;
+    margin: 0% 5%;
   }
 
   .tr {
@@ -342,11 +342,10 @@ a:active {
   }
 
   .td {
-    font-size: 1.25vw;
     text-align: left;
-    flex-basis: 33%;
-    padding: 0 15px;
+    padding: 0 1%;
     display: flex;
+    flex-basis: 25%;
   }
 
   .name {
