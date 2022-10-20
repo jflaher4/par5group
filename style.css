@@ -369,8 +369,8 @@ a:active {
 
   .join-us-message {
     position: absolute;
-    bottom: 77%;
-    left: 44%;
+    bottom: 50%;
+    left: 10%;
     color: white;
     display: flex;
     gap: 10%;
@@ -383,7 +383,7 @@ a:active {
   }
 
   .message {
-    font-size: 1vw;
+    font-size: 1.25vw;
     max-width: fit-content;
   }
 
@@ -397,7 +397,7 @@ a:active {
 
   .join-us-link {
     cursor: pointer;
-    color: var(--light-blue);
+    color: white;
   }
 
   .join-us-link:hover {
