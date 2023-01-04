@@ -133,8 +133,19 @@ a:active {
     display: none;
   }
 
-  .table {
-    margin: 3% 7%;
+  .staff-container {
+    margin: 4% 6%;
+    font-size: 3vw;
+  }
+
+  .staff-header {
+    font-weight: bold;
+    padding-bottom: 1vh;
+    font-size: 4vw;
+  }
+
+  .staff-section {
+    padding-bottom: 2vh;
   }
 
   .tr {
@@ -143,8 +154,8 @@ a:active {
   }
 
   .td {
-    padding-bottom: 4%;
-    flex-basis: 10%;
+    padding-bottom: 2%;
+    flex-basis: 50%;
   }
 
   .large {
@@ -175,6 +186,9 @@ a:active {
     font-family: 'Gotham HTF Book', sans-serif;
     padding: 20% 20% 20% 20%;
     font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
   }
 
   .join-us {
@@ -344,6 +358,9 @@ a:active {
 
   #join-us {
     position: relative;
+    min-height: 100vh;
+    background-image: url("assets/smith-win.jpg");
+    background-size: cover;
   }
 
   .join-us-navbar {
