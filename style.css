@@ -86,19 +86,6 @@ a:active {
     display: none;
   }
 
-  #events {
-    font-family: 'Gotham HTF Book', sans-serif;
-    text-size-adjust: auto;
-    font-size: 2.25vw;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2vw 0 2vw 0;
-    border-top: 1px var(--light-blue) solid;
-    border-bottom: 1px var(--light-blue) solid;
-    flex-wrap: wrap;
-  }
-
   #mission {
     color: var(--dark-blue);
     font-family: 'Gotham HTF Book', sans-serif;
@@ -216,17 +203,6 @@ a:active {
     z-index: 99;
   }
 
-  #events {
-    font-family: 'Gotham HTF Book', sans-serif;
-    position: fixed;
-    text-size-adjust: auto;
-    left: 86%;
-    bottom: 18%;
-    font-size: 1vw;
-    display: flex;
-    flex-direction: column;
-  }
-
   .sidebar {
     width: 18%;
     min-height: 100%;
@@ -249,7 +225,7 @@ a:active {
 
   .navbar {
     font-family: 'Gotham HTF Book', sans-serif;
-    color: var(--light-blue);
+    color: var(--light-grey);
     font-size: 1.25vw;
   }
 
@@ -283,6 +259,8 @@ a:active {
     color: var(--dark-grey);
     display: flex;
     flex-direction: column;
+    background-image: url("assets/Bryson.jpg");
+    background-size: cover;
   }
 
   .header {
@@ -325,6 +303,8 @@ a:active {
     min-height: 100vh;
     color: var(--dark-grey);
     font-family: 'Gotham HTF Book', sans-serif;
+    background-image: url("assets/mickelson-tee.jpg");
+    background-size: cover;
   }
 
   .table {
@@ -369,22 +349,14 @@ a:active {
 
   .join-us-message {
     position: absolute;
-    bottom: 50%;
-    left: 10%;
+    bottom: 35%;
+    left: 18%;
     color: white;
     display: flex;
-    gap: 10%;
+    gap: 2vw;
     font-family: 'Gotham HTF Book', sans-serif;
-  }
-
-  .join-us {
-    font-size: 1.75vw;
-    min-width: fit-content;
-  }
-
-  .message {
-    font-size: 1.25vw;
-    max-width: fit-content;
+    width: 25%;
+    flex-direction: column;
   }
 
   .join-us-email:link {
