@@ -325,6 +325,7 @@ a:active {
   .staff-container {
     display: flex;
     justify-content: space-around;
+    margin-top: 5vh;
   }
 
   .staff-section {
