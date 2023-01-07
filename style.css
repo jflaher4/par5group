@@ -70,6 +70,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: left;
+    border-bottom: solid 2px var(--light-blue);
   }
 
   .dummy {
@@ -86,23 +87,10 @@ a:active {
     display: none;
   }
 
-  #events {
-    font-family: 'Gotham HTF Book', sans-serif;
-    text-size-adjust: auto;
-    font-size: 2.25vw;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2vw 0 2vw 0;
-    border-top: 1px var(--light-blue) solid;
-    border-bottom: 1px var(--light-blue) solid;
-    flex-wrap: wrap;
-  }
-
   #mission {
     color: var(--dark-blue);
     font-family: 'Gotham HTF Book', sans-serif;
-    padding: 20% 20% 10% 20%;
+    padding: 20%;
     font-size: 7vw;
   }
 
@@ -146,8 +134,19 @@ a:active {
     display: none;
   }
 
-  .table {
-    margin: 3% 7%;
+  .staff-container {
+    margin: 4% 6%;
+    font-size: 3vw;
+  }
+
+  .staff-header {
+    font-weight: bold;
+    padding-bottom: 1vh;
+    font-size: 4vw;
+  }
+
+  .staff-section {
+    padding-bottom: 2vh;
   }
 
   .tr {
@@ -156,8 +155,8 @@ a:active {
   }
 
   .td {
-    padding-bottom: 4%;
-    flex-basis: 10%;
+    padding-bottom: 2%;
+    flex-basis: 50%;
   }
 
   .large {
@@ -188,6 +187,9 @@ a:active {
     font-family: 'Gotham HTF Book', sans-serif;
     padding: 20% 20% 20% 20%;
     font-size: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
   }
 
   .join-us {
@@ -216,17 +218,6 @@ a:active {
     z-index: 99;
   }
 
-  #events {
-    font-family: 'Gotham HTF Book', sans-serif;
-    position: fixed;
-    text-size-adjust: auto;
-    left: 86%;
-    bottom: 18%;
-    font-size: 1vw;
-    display: flex;
-    flex-direction: column;
-  }
-
   .sidebar {
     width: 18%;
     min-height: 100%;
@@ -249,7 +240,7 @@ a:active {
 
   .navbar {
     font-family: 'Gotham HTF Book', sans-serif;
-    color: var(--light-blue);
+    color: var(--light-grey);
     font-size: 1.25vw;
   }
 
@@ -280,9 +271,11 @@ a:active {
   #partners {
     min-height: 100vh;
     font-family: 'Gotham HTF Book', sans-serif;
-    color: var(--dark-grey);
+    color: white;
     display: flex;
     flex-direction: column;
+    background-image: url("assets/Bryson.jpg");
+    background-size: cover;
   }
 
   .header {
@@ -312,8 +305,8 @@ a:active {
 
   .partner-img {
     width: 6vw;
-    border: solid var(--dark-grey) 2px;
-    border-radius: 50%;
+    border: solid var(--light-grey) 2px;
+    border-radius: 40%;
   }
 
   .partner-bio {
@@ -323,32 +316,41 @@ a:active {
 
   #staff {
     min-height: 100vh;
-    color: var(--dark-grey);
+    color: white;
     font-family: 'Gotham HTF Book', sans-serif;
+    background-image: url("assets/mickelson-tee.jpg");
+    background-size: cover;
+    font-size: 1vw;
   }
 
-  .table {
-    width: 100%;
-    height: 80vh;
+  .staff-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0% 5%;
+    justify-content: space-around;
+    margin-top: 5vh;
+  }
+
+  .staff-section {
+    padding-bottom: 2vw;
+  }
+
+  .staff-header {
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+
+  .column {
+    width: 40%;
   }
 
   .tr {
     opacity: 0;
     display: flex;
+    width: 100%;
+    padding: 1vh 0 ;
   }
 
   .td {
     text-align: left;
-    padding: 0 1%;
-    display: flex;
-    flex-basis: 25%;
-  }
-
-  .name {
     flex-basis: 50%;
   }
 
@@ -358,6 +360,9 @@ a:active {
 
   #join-us {
     position: relative;
+    min-height: 100vh;
+    background-image: url("assets/smith-win.jpg");
+    background-size: cover;
   }
 
   .join-us-navbar {
@@ -369,22 +374,14 @@ a:active {
 
   .join-us-message {
     position: absolute;
-    bottom: 50%;
-    left: 10%;
+    bottom: 35%;
+    left: 18%;
     color: white;
     display: flex;
-    gap: 10%;
+    gap: 2vw;
     font-family: 'Gotham HTF Book', sans-serif;
-  }
-
-  .join-us {
-    font-size: 1.75vw;
-    min-width: fit-content;
-  }
-
-  .message {
-    font-size: 1.25vw;
-    max-width: fit-content;
+    width: 25%;
+    flex-direction: column;
   }
 
   .join-us-email:link {
