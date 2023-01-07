@@ -70,6 +70,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: left;
+    border-bottom: solid 2px var(--light-blue);
   }
 
   .dummy {
@@ -89,7 +90,7 @@ a:active {
   #mission {
     color: var(--dark-blue);
     font-family: 'Gotham HTF Book', sans-serif;
-    padding: 20% 20% 10% 20%;
+    padding: 20%;
     font-size: 7vw;
   }
 
