@@ -57,10 +57,50 @@ a:active {
     overflow-x: hidden;
   }
 
-  .background-img, .mobile-img {
+  .mobile-img {
     height: 40vh;
     width: 100vw;
     object-fit: cover;
+  }
+
+  .mobile-img-1 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("assets/Mickleson-walking.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mobile-img-2 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("assets/Ortiz-wave.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mobile-img-3 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("assets/smith-win-color.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mobile-img-4 {
+    height: 40vh;
+    width: 100%;
+    background-image: url("assets/Mickleson-crowd.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .background-img {
+    height: 40vh;
+    width: 100%;
+    background-image: url("assets/DJohnson-Gallery-Portland.jpg");
+    background-size: cover;
+    background-position: center;
   }
   
   .sidebar {
@@ -257,11 +297,9 @@ a:active {
   .background-img {
     height: 100vh;
     width: 100%;
-    object-fit: cover;
-  }
-
-  .mobile-img {
-    display: none;
+    background-image: url("assets/DJohnson-Gallery-Portland.jpg");
+    background-size: cover;
+    background-position: center;
   }
 
   .mobile-header {
@@ -276,6 +314,8 @@ a:active {
     flex-direction: column;
     background-image: url("assets/Bryson.jpg");
     background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
   }
 
   .header {
@@ -320,6 +360,8 @@ a:active {
     font-family: 'Gotham HTF Book', sans-serif;
     background-image: url("assets/mickelson-tee.jpg");
     background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
     font-size: 1vw;
   }
 
@@ -363,6 +405,8 @@ a:active {
     min-height: 100vh;
     background-image: url("assets/smith-win.jpg");
     background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
   }
 
   .join-us-navbar {
