@@ -51,414 +51,840 @@ a:active {
   text-decoration: none;
 }
 
-@media (orientation: portrait) {
-  body {
-    margin: 0;
-    overflow-x: hidden;
-  }
+/* Phones */
+@media only screen and (max-width: 1200px) {
+  @media (orientation: portrait) {
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+  
+    .mobile-img {
+      height: 40vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+  
+    .mobile-img-1 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/Mickleson-walking.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-img-2 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/Ortiz-wave.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-img-3 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/smith-win-color.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-img-4 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/Mickleson-crowd.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .background-img {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/DJohnson-Gallery-Portland.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .sidebar {
+      width: 100%;
+      position: fixed;
+      background-color: #203864;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      border-bottom: solid 2px var(--light-blue);
+    }
+  
+    .dummy {
+      position: relative !important;
+      opacity: 0 !important;
+    }
+  
+    #main-logo {
+      width: 50%;
+      margin-left: 2vw;
+    }
+  
+    .navbar {
+      display: none;
+    }
 
-  .mobile-img {
-    height: 40vh;
-    width: 100vw;
-    object-fit: cover;
-  }
-
-  .mobile-img-1 {
-    height: 40vh;
-    width: 100%;
-    background-image: url("assets/Mickleson-walking.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .mobile-img-2 {
-    height: 40vh;
-    width: 100%;
-    background-image: url("assets/Ortiz-wave.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .mobile-img-3 {
-    height: 40vh;
-    width: 100%;
-    background-image: url("assets/smith-win-color.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .mobile-img-4 {
-    height: 40vh;
-    width: 100%;
-    background-image: url("assets/Mickleson-crowd.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .background-img {
-    height: 40vh;
-    width: 100%;
-    background-image: url("assets/DJohnson-Gallery-Portland.jpg");
-    background-size: cover;
-    background-position: center;
+    #navbar {
+      display: none;
+    }
+  
+    #mission {
+      color: var(--dark-blue);
+      font-family: 'Gotham HTF Book', sans-serif;
+      padding: 20%;
+      font-size: 7vw;
+    }
+  
+    .mobile-header {
+      font-size: 7vw;
+      padding: 3%;
+    }
+  
+    #partners {
+      margin: 5% 3% 10% 3%;
+      font-family: 'Gotham HTF Book', sans-serif;
+      color: var(--dark-grey);
+    }
+  
+    .partners-list {
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: space-between;
+    }
+  
+    .partner-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 5% 0;
+    }
+  
+    .partner-img {
+      width: 25%;
+      border: solid var(--dark-grey) 1px;
+      border-radius: 25%;
+    }
+  
+    .partner-bio {
+      font-size: 3vw;
+      padding: 0 3%;
+    }
+  
+    .email {
+      display: none;
+    }
+  
+    .staff-container {
+      margin: 4% 6%;
+      font-size: 3vw;
+    }
+  
+    .staff-header {
+      font-weight: bold;
+      padding-bottom: 1vh;
+      font-size: 4vw;
+    }
+  
+    .staff-section {
+      padding-bottom: 2vh;
+    }
+  
+    .tr {
+      display: flex;
+      align-items: center;
+    }
+  
+    .td {
+      padding-bottom: 2%;
+      flex-basis: 50%;
+    }
+  
+    .large {
+      padding-right: 5%;
+      flex-basis: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1vw;
+    }
+  
+    .xlarge {
+      flex-basis: 50%;
+      padding-right: 5%;
+    }
+  
+    .small-logo {
+      height: 6vw;
+    }
+  
+    #staff {
+      margin: 10% 0;
+      color: var(--dark-grey);
+      font-family: 'Gotham HTF Book', sans-serif;
+    }
+  
+    .join-us-message {
+      color: var(--dark-blue);
+      font-family: 'Gotham HTF Book', sans-serif;
+      padding: 20% 20% 20% 20%;
+      font-size: 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+  
+    .join-us {
+        font-size: 7vw;
+    }
+  
+    .join-us-email:link {
+      color: var(--light-blue);
+    }
   }
   
-  .sidebar {
-    width: 100%;
-    position: fixed;
-    background-color: #203864;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    border-bottom: solid 2px var(--light-blue);
-  }
+  @media (orientation: landscape) {
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  
+    #main-logo {
+      position: fixed;
+      width: 25%;
+      top: 3%;
+      right: 3%;
+      cursor: pointer;
+      z-index: 99;
+    }
+  
+    .sidebar {
+      width: 18%;
+      min-height: 100%;
+      background-color: #203864;
+      border-left: 1.5px solid white;
+    }
+  
+    .content {
+      width: 82%;
+    }
+  
+    #navbar {
+      position: absolute;
+      top: 6%;
+      left: 5%;
+      color: var(--light-blue);
+      font-family: 'Gotham HTF Book', sans-serif;
+      font-size: 1.25em;
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    #mission {
+      font-family: 'Gotham HTF Book', sans-serif;
+      position: fixed;
+      color: var(--light-grey);
+      right: 2%;
+      top: 40%;
+      width: 14%;
+      font-size: 1vw;
+    }
+  
+    .background-img {
+      height: 100vh;
+      width: 100%;
+      background-image: url("assets/DJohnson-Gallery-Portland.jpg");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1.5px solid white;
+    }
 
-  .dummy {
-    position: relative !important;
-    opacity: 0 !important;
-  }
-
-  #main-logo {
-    width: 50%;
-    margin-left: 2vw;
-  }
-
-  .navbar {
-    display: none;
-  }
-
-  #mission {
-    color: var(--dark-blue);
-    font-family: 'Gotham HTF Book', sans-serif;
-    padding: 20%;
-    font-size: 7vw;
-  }
-
-  .mobile-header {
-    font-size: 7vw;
-    padding: 3%;
-  }
-
-  #partners {
-    margin: 5% 3% 10% 3%;
-    font-family: 'Gotham HTF Book', sans-serif;
-    color: var(--dark-grey);
-  }
-
-  .partners-list {
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: space-between;
-  }
-
-  .partner-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5% 0;
-  }
-
-  .partner-img {
-    width: 25%;
-    border: solid var(--dark-grey) 1px;
-    border-radius: 25%;
-  }
-
-  .partner-bio {
-    font-size: 3vw;
-    padding: 0 3%;
-  }
-
-  .email {
-    display: none;
-  }
-
-  .staff-container {
-    margin: 4% 6%;
-    font-size: 3vw;
-  }
-
-  .staff-header {
-    font-weight: bold;
-    padding-bottom: 1vh;
-    font-size: 4vw;
-  }
-
-  .staff-section {
-    padding-bottom: 2vh;
-  }
-
-  .tr {
-    display: flex;
-    align-items: center;
-  }
-
-  .td {
-    padding-bottom: 2%;
-    flex-basis: 50%;
-  }
-
-  .large {
-    padding-right: 5%;
-    flex-basis: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1vw;
-  }
-
-  .xlarge {
-    flex-basis: 50%;
-    padding-right: 5%;
-  }
-
-  .small-logo {
-    height: 6vw;
-  }
-
-  #staff {
-    margin: 10% 0;
-    color: var(--dark-grey);
-    font-family: 'Gotham HTF Book', sans-serif;
-  }
-
-  .join-us-message {
-    color: var(--dark-blue);
-    font-family: 'Gotham HTF Book', sans-serif;
-    padding: 20% 20% 20% 20%;
-    font-size: 5vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-  }
-
-  .join-us {
-      font-size: 7vw;
-  }
-
-  .join-us-email:link {
-    color: var(--light-blue);
+    .small-logo {
+      display: none;
+    }
+  
+    #partners {
+      min-height: 100vh;
+      font-family: 'Gotham HTF Book', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      background-image: url("assets/Bryson.jpg");
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: top;
+      border-bottom: 1.5px solid white;
+    }
+  
+    .header {
+      font-size: 1.75vw;
+      padding: 3%;
+    }
+  
+    .partners-list {
+      display: flex;
+      flex-direction: column;
+      margin: 0% 3%;
+      justify-content: space-between;
+      height: 80vh;
+      backdrop-filter: blur(1px);
+    }
+  
+    .partner-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      opacity: 0;
+    }
+  
+    .visible {
+      opacity: 1 !important;
+      transition: all 1s;
+    }
+  
+    .partner-img {
+      width: 6vw;
+      border: solid var(--light-grey) 0.05em;
+      border-radius: 20%;
+    }
+  
+    .partner-bio {
+      font-size: 1vw;
+      padding: 0 3%;
+    }
+  
+    #staff {
+      min-height: 100vh;
+      color: white;
+      font-family: 'Gotham HTF Book', sans-serif;
+      background-image: url("assets/mickelson-tee.jpg");
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: top;
+      font-size: 1vw;
+      border-bottom: 1.5px solid white;
+    }
+  
+    .staff-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 1vw;
+    }
+  
+    .staff-section {
+      padding-bottom: 2vw;
+      backdrop-filter: blur(2px);
+    }
+  
+    .staff-header {
+      font-weight: bold;
+      font-size: 1.5vw;
+    }
+  
+    .column {
+      width: 40%;
+    }
+  
+    .tr {
+      opacity: 0;
+      display: flex;
+      width: 100%;
+      padding: 1vh 0 ;
+    }
+  
+    .td {
+      text-align: left;
+      flex-basis: 50%;
+    }
+  
+    .small-logo {
+      width: 5%;
+    }
+  
+    #join-us {
+      position: relative;
+      min-height: 100vh;
+      background-image: url("assets/smith-win.jpg");
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: top;
+    }
+  
+    .join-us-navbar {
+      position: absolute;
+      left: 0;
+      color: var(--light-grey);
+      padding: 3%;
+    }
+  
+    .join-us-message {
+      position: absolute;
+      bottom: 35%;
+      left: 13%;
+      color: white;
+      display: flex;
+      gap: 2vw;
+      font-family: 'Gotham HTF Book', sans-serif;
+      width: 25%;
+      flex-direction: column;
+      backdrop-filter: blur(2px);
+      padding: 1em;
+    }
+  
+    .join-us-email:link {
+      color: var(--light-blue);
+    }
+  
+    .join-us-email:hover {
+      color: var(--light-grey);
+    }
+  
+    .join-us-link {
+      cursor: pointer;
+      color: white;
+    }
+  
+    .join-us-link:hover {
+      color: var(--light-grey);
+    }
+  
+    .link {
+      cursor: pointer;
+      color: var(--dark-blue);
+    }
+  
+    .footer {
+      background-color: var(--light-blue);
+    }
+  
+    .dummy {
+      display: none !important;
+    }
   }
 }
 
-@media (orientation: landscape) {
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
-  }
+/* Desktops */
+@media only screen and (min-width: 1200px) {
+  @media (orientation: portrait) {
+    body {
+      margin: 0;
+      overflow-x: hidden;
+    }
+  
+    .mobile-img {
+      height: 40vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+  
+    .mobile-img-1 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/Mickleson-walking.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-img-2 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/Ortiz-wave.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-img-3 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/smith-win-color.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-img-4 {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/Mickleson-crowd.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .background-img {
+      height: 40vh;
+      width: 100%;
+      background-image: url("assets/DJohnson-Gallery-Portland.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .sidebar {
+      width: 100%;
+      position: fixed;
+      background-color: #203864;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      border-bottom: solid 2px var(--light-blue);
+    }
+  
+    .dummy {
+      position: relative !important;
+      opacity: 0 !important;
+    }
+  
+    #main-logo {
+      width: 50%;
+      margin-left: 2vw;
+    }
+  
+    #navbar {
+      display: none;
+    }
 
-  #main-logo {
-    position: fixed;
-    width: 25%;
-    top: 3%;
-    right: 3%;
-    cursor: pointer;
-    z-index: 99;
+    .navbar {
+      display: none;
+    }
+  
+    #mission {
+      color: var(--dark-blue);
+      font-family: 'Gotham HTF Book', sans-serif;
+      padding: 20%;
+      font-size: 7vw;
+    }
+  
+    .mobile-header {
+      font-size: 7vw;
+      padding: 3%;
+    }
+  
+    #partners {
+      margin: 5% 3% 10% 3%;
+      font-family: 'Gotham HTF Book', sans-serif;
+      color: var(--dark-grey);
+    }
+  
+    .partners-list {
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: space-between;
+    }
+  
+    .partner-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 5% 0;
+    }
+  
+    .partner-img {
+      width: 25%;
+      border: solid var(--dark-grey) 1px;
+      border-radius: 25%;
+    }
+  
+    .partner-bio {
+      font-size: 3vw;
+      padding: 0 3%;
+    }
+  
+    .email {
+      display: none;
+    }
+  
+    .staff-container {
+      margin: 4% 6%;
+      font-size: 3vw;
+    }
+  
+    .staff-header {
+      font-weight: bold;
+      padding-bottom: 1vh;
+      font-size: 4vw;
+    }
+  
+    .staff-section {
+      padding-bottom: 2vh;
+    }
+  
+    .tr {
+      display: flex;
+      align-items: center;
+    }
+  
+    .td {
+      padding-bottom: 2%;
+      flex-basis: 50%;
+    }
+  
+    .large {
+      padding-right: 5%;
+      flex-basis: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1vw;
+    }
+  
+    .xlarge {
+      flex-basis: 50%;
+      padding-right: 5%;
+    }
+  
+    .small-logo {
+      height: 6vw;
+    }
+  
+    #staff {
+      margin: 10% 0;
+      color: var(--dark-grey);
+      font-family: 'Gotham HTF Book', sans-serif;
+    }
+  
+    .join-us-message {
+      color: var(--dark-blue);
+      font-family: 'Gotham HTF Book', sans-serif;
+      padding: 20% 20% 20% 20%;
+      font-size: 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+  
+    .join-us {
+        font-size: 7vw;
+    }
+  
+    .join-us-email:link {
+      color: var(--light-blue);
+    }
   }
-
-  .sidebar {
-    width: 18%;
-    min-height: 100%;
-    background-color: #203864;
-    border-left: 1.5px solid white;
-  }
-
-  .content {
-    width: 82%;
-  }
-
-  #navbar {
-    font-family: 'Gotham HTF Book', sans-serif;
-    position: absolute;
-    top: 6%;
-    left: 5%;
-    color: var(--light-blue);
-    font-size: 1.25vw;
-  }
-
-  .navbar {
-    font-family: 'Gotham HTF Book', sans-serif;
-    color: var(--light-grey);
-    font-size: 1.25vw;
-  }
-
-  #mission {
-    font-family: 'Gotham HTF Book', sans-serif;
-    position: fixed;
-    color: var(--light-grey);
-    right: 2%;
-    top: 40%;
-    width: 14%;
-    font-size: 1vw;
-  }
-
-  .background-img {
-    height: 100vh;
-    width: 100%;
-    background-image: url("assets/DJohnson-Gallery-Portland.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .mobile-header {
-    display: none;
-  }
-
-  #partners {
-    min-height: 100vh;
-    font-family: 'Gotham HTF Book', sans-serif;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    background-image: url("assets/Bryson.jpg");
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-  }
-
-  .header {
-    font-size: 1.75vw;
-    padding: 3%;
-  }
-
-  .partners-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0% 3%;
-    justify-content: space-between;
-    height: 80vh;
-  }
-
-  .partner-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    opacity: 0;
-  }
-
-  .visible {
-    opacity: 1 !important;
-    transition: all 1s;
-  }
-
-  .partner-img {
-    width: 6vw;
-    border: solid var(--light-grey) 2px;
-    border-radius: 40%;
-  }
-
-  .partner-bio {
-    font-size: 1vw;
-    padding: 0 3%;
-  }
-
-  #staff {
-    min-height: 100vh;
-    color: white;
-    font-family: 'Gotham HTF Book', sans-serif;
-    background-image: url("assets/mickelson-tee.jpg");
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-    font-size: 1vw;
-  }
-
-  .staff-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
-  }
-
-  .staff-section {
-    padding-bottom: 2vw;
-  }
-
-  .staff-header {
-    font-weight: bold;
-    font-size: 1.5vw;
-  }
-
-  .column {
-    width: 40%;
-  }
-
-  .tr {
-    opacity: 0;
-    display: flex;
-    width: 100%;
-    padding: 1vh 0 ;
-  }
-
-  .td {
-    text-align: left;
-    flex-basis: 50%;
-  }
-
-  .small-logo {
-    width: 5%;
-  }
-
-  #join-us {
-    position: relative;
-    min-height: 100vh;
-    background-image: url("assets/smith-win.jpg");
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-  }
-
-  .join-us-navbar {
-    position: absolute;
-    left: 0;
-    color: var(--light-grey);
-    padding: 3%;
-  }
-
-  .join-us-message {
-    position: absolute;
-    bottom: 35%;
-    left: 18%;
-    color: white;
-    display: flex;
-    gap: 2vw;
-    font-family: 'Gotham HTF Book', sans-serif;
-    width: 25%;
-    flex-direction: column;
-  }
-
-  .join-us-email:link {
-    color: var(--light-blue);
-  }
-
-  .join-us-email:hover {
-    color: var(--light-grey);
-  }
-
-  .join-us-link {
-    cursor: pointer;
-    color: white;
-  }
-
-  .join-us-link:hover {
-    color: var(--light-grey);
-  }
-
-  .link {
-    cursor: pointer;
-    color: var(--dark-blue);
-  }
-
-  .link:hover {
-    color: var(--light-blue);
-  }
-
-  .footer {
-    background-color: var(--light-blue);
-  }
-
-  .dummy {
-    display: none !important;
+  
+  @media (orientation: landscape) {
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      overflow: hidden;
+    }
+  
+    #main-logo {
+      position: fixed;
+      width: 25%;
+      top: 3%;
+      right: 3%;
+      cursor: pointer;
+      z-index: 99;
+    }
+  
+    .sidebar {
+      width: 18%;
+      min-height: 100%;
+      background-color: #203864;
+      border-left: 1.5px solid white;
+    }
+  
+    .content {
+      width: 82%;
+    }
+  
+    #navbar {
+      font-family: 'Gotham HTF Book', sans-serif;
+      position: absolute;
+      top: 6%;
+      left: 5%;
+      color: var(--light-blue);
+      font-size: 1.25vw;
+    }
+  
+    .navbar {
+      font-family: 'Gotham HTF Book', sans-serif;
+      color: var(--light-grey);
+      font-size: 1.25vw;
+    }
+  
+    #mission {
+      font-family: 'Gotham HTF Book', sans-serif;
+      position: fixed;
+      color: var(--light-grey);
+      right: 2%;
+      top: 40%;
+      width: 14%;
+      font-size: 1vw;
+    }
+  
+    .background-img {
+      height: 100vh;
+      width: 100%;
+      background-image: url("assets/DJohnson-Gallery-Portland.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .mobile-header {
+      display: none;
+    }
+  
+    #partners {
+      min-height: 100vh;
+      font-family: 'Gotham HTF Book', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      background-image: url("assets/Bryson.jpg");
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: top;
+    }
+  
+    .header {
+      font-size: 1.75vw;
+      padding: 3%;
+    }
+  
+    .partners-list {
+      display: flex;
+      flex-direction: column;
+      margin: 0% 3%;
+      justify-content: space-between;
+      height: 80vh;
+    }
+  
+    .partner-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      opacity: 0;
+    }
+  
+    .visible {
+      opacity: 1 !important;
+      transition: all 1s;
+    }
+  
+    .partner-img {
+      width: 6vw;
+      border: solid var(--light-grey) 2px;
+      border-radius: 40%;
+    }
+  
+    .partner-bio {
+      font-size: 1vw;
+      padding: 0 3%;
+    }
+  
+    #staff {
+      min-height: 100vh;
+      color: white;
+      font-family: 'Gotham HTF Book', sans-serif;
+      background-image: url("assets/mickelson-tee.jpg");
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: top;
+      font-size: 1vw;
+    }
+  
+    .staff-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5vh;
+    }
+  
+    .staff-section {
+      padding-bottom: 2vw;
+    }
+  
+    .staff-header {
+      font-weight: bold;
+      font-size: 1.5vw;
+    }
+  
+    .column {
+      width: 40%;
+    }
+  
+    .tr {
+      opacity: 0;
+      display: flex;
+      width: 100%;
+      padding: 1vh 0 ;
+    }
+  
+    .td {
+      text-align: left;
+      flex-basis: 50%;
+    }
+  
+    .small-logo {
+      width: 5%;
+    }
+  
+    #join-us {
+      position: relative;
+      min-height: 100vh;
+      background-image: url("assets/smith-win.jpg");
+      background-size: cover;
+      background-position-x: center;
+      background-position-y: top;
+    }
+  
+    .join-us-navbar {
+      position: absolute;
+      left: 0;
+      color: var(--light-grey);
+      padding: 3%;
+    }
+  
+    .join-us-message {
+      position: absolute;
+      bottom: 35%;
+      left: 18%;
+      color: white;
+      display: flex;
+      gap: 2vw;
+      font-family: 'Gotham HTF Book', sans-serif;
+      width: 25%;
+      flex-direction: column;
+    }
+  
+    .join-us-email:link {
+      color: var(--light-blue);
+    }
+  
+    .join-us-email:hover {
+      color: var(--light-grey);
+    }
+  
+    .join-us-link {
+      cursor: pointer;
+      color: white;
+    }
+  
+    .join-us-link:hover {
+      color: var(--light-grey);
+    }
+  
+    .link {
+      cursor: pointer;
+      color: var(--dark-blue);
+    }
+  
+    .link:hover {
+      color: var(--light-blue);
+    }
+  
+    .footer {
+      background-color: var(--light-blue);
+    }
+  
+    .dummy {
+      display: none !important;
+    }
   }
 }
