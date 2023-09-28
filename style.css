@@ -52,7 +52,7 @@ body {
 }
 
 .title {
-  font-size: 1.15em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
@@ -124,7 +124,7 @@ body {
   }
 
   #partners {
-    margin: 5% 3% 10% 3%;
+    margin: 5% 3% 5% 3%;
     color: var(--dark-grey);
   }
 
@@ -135,16 +135,15 @@ body {
   }
 
   .partner-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5% 0;
+    margin-bottom: 4vh;
   }
 
   .partner-img {
     width: 25%;
     border: solid var(--dark-grey) 1px;
     border-radius: 25%;
+    float: left;
+    margin: 0 3vw 3vw 3vw;
   }
 
   .partner-bio {
