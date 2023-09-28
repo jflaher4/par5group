@@ -86,7 +86,9 @@ body {
   }
 
   .mobile-img-1 {
-    background-image: url("assets/Mickleson-walking.jpg");
+    background-position-x: center;
+    background-position-y: top;
+    background-image: url("assets/bryson-chicago.jpg");
   }
 
   .mobile-img-2 {
@@ -111,7 +113,7 @@ body {
 
   #mission {
     color: var(--dark-blue);
-    padding: 20%;
+    padding: 20% 20% 10% 20%;
     font-size: 7vw;
   }
 
